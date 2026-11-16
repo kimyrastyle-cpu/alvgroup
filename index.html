@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ALV Group Resources — Pembersihan Komersial, Kemasan Lantai & Kerja Sivil</title>
-<meta name="description" content="ALV Group Resources — kontraktor Bumiputera di Kuala Lumpur untuk pembersihan komersial, kemasan lantai, epoxy, konkrit stamping dan kerja sivil bagi sektor kerajaan dan korporat.">
+<title>ALV Group Resources — Konkrit Imprint, Marmar &amp; Terazzo, Epoxy</title>
+<meta name="description" content="ALV Group Resources — kontraktor Bumiputera berdaftar MOF &amp; CIDB di Kuala Lumpur: konkrit imprint, penggilapan marmar &amp; terazzo, lantai epoxy, kerja mengecat dan pembersihan pasca pembinaan.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -124,8 +124,9 @@ h2 em{font-style:normal;color:var(--gold)}
 #kepakaran{background:var(--ink2)}
 .svc-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap;margin-bottom:70px}
 .svc-head .lead{max-width:460px}
-.svc{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
-.card{background:var(--ink2);position:relative;overflow:hidden;min-height:560px;display:flex;flex-direction:column;justify-content:flex-end;padding:40px 36px;isolation:isolate}
+.svc{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.card{grid-column:span 2;background:var(--ink2);position:relative;overflow:hidden;min-height:520px;display:flex;flex-direction:column;justify-content:flex-end;padding:40px 36px;isolation:isolate}
+.card:nth-child(1),.card:nth-child(2){grid-column:span 3;min-height:600px}
 .card .bg{position:absolute;inset:0;z-index:-2}
 .card .bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) brightness(.5);transform:scale(1.06);transition:transform 1.2s cubic-bezier(.2,.7,.2,1),filter .8s}
 .card::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(20,20,20,.98) 25%,rgba(20,20,20,.55) 70%,rgba(20,20,20,.35))}
@@ -238,6 +239,7 @@ footer .reg{font-family:var(--h);letter-spacing:.08em}
 /* ---------- responsive ---------- */
 @media (max-width:1080px){
   .svc{grid-template-columns:1fr}
+  .card:nth-child(n){grid-column:auto;min-height:440px}
   .card{min-height:420px}
   .about,.why,.ct{grid-template-columns:1fr}
   .about-img{max-width:520px;margin-left:60px}
@@ -298,16 +300,17 @@ footer .reg{font-family:var(--h);letter-spacing:.08em}
 <!-- 01 HERO -->
 <section id="hero" data-label="Utama">
   <div class="slides" id="slides">
-    <img src="hero_p12_02.jpg" alt="" class="on">
-    <img src="hero_p10_06.jpg" alt="">
-    <img src="hero_p08_05.jpg" alt="">
-    <img src="hero_p14_04.jpg" alt="">
+    <img src="hero_st.jpg" alt="" class="on">
+    <img src="hero_pm.jpg" alt="">
+    <img src="hero_ep.jpg" alt="">
+    <img src="hero_ks.jpg" alt="">
+    <img src="hero_p12_02.jpg" alt="">
   </div>
   <div class="grain"></div>
   <div class="hero-in">
-    <div class="eyebrow rv"><span>Kontraktor Bumiputera · Kuala Lumpur</span></div>
+    <div class="eyebrow rv"><span>Kontraktor Bumiputera · Berdaftar MOF &amp; CIDB</span></div>
     <h1 class="rv"><span class="mask"><span>Membina Kualiti.</span></span><span class="mask"><span class="g">Menyempurnakan</span></span><span class="mask"><span>Ruang.</span></span></h1>
-    <p class="lead rv d2">Pembersihan komersial, kemasan lantai dan kerja-kerja sivil bersepadu — dilaksanakan mengikut spesifikasi kontrak untuk agensi kerajaan dan syarikat korporat.</p>
+    <p class="lead rv d2">Konkrit imprint, penggilapan marmar &amp; terazzo, lantai epoxy, kerja mengecat dan pembersihan — dilaksanakan mengikut spesifikasi kontrak untuk agensi kerajaan, korporat dan kediaman.</p>
     <div class="hero-row rv d3">
       <a class="btn gold" href="#hubungi">Minta Sebut Harga <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <a class="btn ghost" href="#kepakaran">Terokai Kepakaran</a>
@@ -315,9 +318,11 @@ footer .reg{font-family:var(--h);letter-spacing:.08em}
   </div>
   <div class="hero-foot rv d4">
     <div class="hero-tags">
-      <div><b>Pembersihan</b>Komersial & Pasca Renovasi</div>
-      <div><b>Kemasan Lantai</b>Marmar · Epoxy · Terazzo</div>
-      <div><b>Kerja Sivil</b>Konkrit · Stamping · Cat</div>
+      <div><b>Konkrit Imprint</b>Stamping · Slab</div>
+      <div><b>Marmar &amp; Terazzo</b>Penggilapan</div>
+      <div><b>Lantai Epoxy</b>Industri &amp; Komersial</div>
+      <div><b>Mengecat</b>Kediaman · Industri</div>
+      <div><b>Pembersihan</b>Pasca Pembinaan</div>
     </div>
     <div class="scroll"><i></i>Skrol untuk teroka</div>
   </div>
@@ -334,14 +339,14 @@ footer .reg{font-family:var(--h);letter-spacing:.08em}
       <div class="badges rv d3">
         <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><b>100% Bumiputera</b><span>Syarikat milik penuh Bumiputera</span></div>
         <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><b>Berdaftar SSM</b><span>202403156415 (003612138-V)</span></div>
-        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg><b>Kerajaan & Korporat</b><span>Pematuhan spesifikasi kontrak</span></div>
-        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 19c6 0 14-4 14-15C9 4 5 9 5 15v4z"/><path d="M5 19c3-4 6-7 10-9"/></svg><b>Mesra Alam</b><span>Produk tempatan, amalan selamat</span></div>
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg><b>Berdaftar MOF</b><span>Kementerian Kewangan Malaysia</span></div>
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="9" r="6"/><path d="M9 14.5L7.5 22l4.5-2.5 4.5 2.5L15 14.5"/><path d="M9.5 9l1.8 1.8L14.8 7.3"/></svg><b>Berdaftar CIDB</b><span>Lembaga Pembangunan Industri Pembinaan</span></div>
       </div>
     </div>
     <div class="about-img rv d2">
-      <img src="p12_04.jpg" alt="Pasukan ALV mencuci tapak parkir">
-      <img class="a2" src="p13_02.jpg" alt="Pembersihan rumah contoh">
-      <span class="tag">Kerja di tapak sebenar</span>
+      <img src="team1.jpg" alt="Pasukan ALV Group Resources di tapak projek">
+      <img class="a2" src="pm_2.jpg" alt="Penggilapan lantai oleh pasukan ALV">
+      <span class="tag">Pasukan ALV di tapak</span>
     </div>
   </div>
 </section>
@@ -353,43 +358,62 @@ footer .reg{font-family:var(--h);letter-spacing:.08em}
       <div class="eyebrow rv"><span class="n">03</span>Kepakaran Kami</div>
       <h2 class="rv"><span class="mask"><span>Dari permukaan</span></span><span class="mask"><span>ke <em>struktur.</em></span></span></h2>
     </div>
-    <p class="lead rv d2">Satu rakan untuk keseluruhan keperluan fasiliti anda — tiga teras kepakaran, satu standard kualiti.</p>
+    <p class="lead rv d2">Satu rakan untuk keseluruhan keperluan fasiliti anda — lima kepakaran teras, satu standard kualiti.</p>
   </div>
   <div class="svc">
     <article class="card rv">
-      <div class="bg"><img src="p12_02.jpg" alt=""></div>
-      <span class="no">01 / 03</span>
-      <h3>Pembersihan Komersial</h3>
+      <div class="bg"><img src="st_2.jpg" alt=""></div>
+      <span class="no">01 / 05</span>
+      <h3>Konkrit Imprint</h3>
       <ul>
-        <li>Pembersihan dalaman & luaran bangunan</li>
-        <li>Pembersihan pasca renovasi</li>
-        <li>Rumah contoh & unit siap bina</li>
-        <li>Cucian tapak parkir berskala besar</li>
-        <li>Pembekalan bahan pencuci</li>
+        <li>Konkrit bercorak (stamping imprint)</li>
+        <li>Laluan masuk, porch &amp; landskap</li>
+        <li>Konkrit slab &amp; turapan lantai</li>
+        <li>Kerja sivil kecil hingga sederhana</li>
       </ul>
     </article>
     <article class="card rv d1">
-      <div class="bg"><img src="p14_04.jpg" alt=""></div>
-      <span class="no">02 / 03</span>
-      <h3>Rawatan & Kemasan Lantai</h3>
+      <div class="bg"><img src="pm_1.jpg" alt=""></div>
+      <span class="no">02 / 05</span>
+      <h3>Penggilapan Marmar &amp; Terazzo</h3>
       <ul>
         <li>Penggilapan lantai marmar</li>
-        <li>Terazzo, mozek & jubin</li>
-        <li>Salutan lantai epoxy</li>
-        <li>Membaikpulih lantai sedia ada</li>
-        <li>Penandaan garisan lantai</li>
+        <li>Terazzo, mozek &amp; jubin</li>
+        <li>Membaikpulih kilauan lantai lama</li>
+        <li>Kediaman &amp; premis komersial</li>
       </ul>
     </article>
     <article class="card rv d2">
-      <div class="bg"><img src="p09_03.jpg" alt=""></div>
-      <span class="no">03 / 03</span>
-      <h3>Kerja Sivil & Pembinaan</h3>
+      <div class="bg"><img src="ep_1.jpg" alt=""></div>
+      <span class="no">03 / 05</span>
+      <h3>Lantai Epoxy</h3>
       <ul>
-        <li>Konkrit slab</li>
-        <li>Konkrit bercorak (stamping imprint)</li>
-        <li>Turapan lantai konkrit</li>
-        <li>Mengecat dinding bangunan</li>
-        <li>Kerja sivil kecil hingga sederhana</li>
+        <li>Salutan lantai epoxy industri</li>
+        <li>Membaikpulih lantai epoxy sedia ada</li>
+        <li>Penandaan garisan &amp; zon keselamatan</li>
+        <li>Kilang, gudang &amp; premis komersial</li>
+      </ul>
+    </article>
+    <article class="card rv">
+      <div class="bg"><img src="paint_1.jpg" alt=""></div>
+      <span class="no">04 / 05</span>
+      <h3>Kerja Mengecat</h3>
+      <ul>
+        <li>Rumah kediaman</li>
+        <li>Bangunan komersial</li>
+        <li>Premis industri &amp; kilang</li>
+        <li>Naik taraf ruang &amp; galeri</li>
+      </ul>
+    </article>
+    <article class="card rv d1">
+      <div class="bg"><img src="p12_02.jpg" alt=""></div>
+      <span class="no">05 / 05</span>
+      <h3>Pembersihan</h3>
+      <ul>
+        <li>Pembersihan pasca pembinaan</li>
+        <li>Pembersihan pasca renovasi</li>
+        <li>Rumah contoh &amp; unit siap bina</li>
+        <li>Cucian tapak parkir &amp; bekalan bahan pencuci</li>
       </ul>
     </article>
   </div>
@@ -453,7 +477,7 @@ footer .reg{font-family:var(--h);letter-spacing:.08em}
 
 <!-- 07 CONTACT -->
 <section id="hubungi" data-label="Hubungi">
-  <div class="bgimg"><img src="hero_p09_05.jpg" alt=""></div>
+  <div class="bgimg"><img src="hero_ep2.jpg" alt=""></div>
   <div class="ct">
     <div>
       <div class="eyebrow rv"><span class="n">07</span>Hubungi Kami</div>
@@ -474,13 +498,12 @@ footer .reg{font-family:var(--h);letter-spacing:.08em}
       <div class="two">
         <div class="f"><label for="sv">Perkhidmatan</label>
           <select id="sv">
-            <option>Pembersihan Komersial</option>
-            <option>Pembersihan Pasca Renovasi</option>
-            <option>Penggilapan Lantai Marmar / Terazzo</option>
+            <option>Konkrit Imprint (Stamping)</option>
+            <option>Konkrit Slab / Turapan</option>
+            <option>Penggilapan Marmar / Terazzo</option>
             <option>Lantai Epoxy</option>
-            <option>Konkrit Slab / Stamping</option>
-            <option>Mengecat Bangunan</option>
-            <option>Bekalan Bahan Pencuci</option>
+            <option>Kerja Mengecat</option>
+            <option>Pembersihan Pasca Pembinaan / Renovasi</option>
             <option>Lain-lain</option>
           </select></div>
         <div class="f"><label for="lk">Lokasi Premis</label><input id="lk"></div>
@@ -494,7 +517,7 @@ footer .reg{font-family:var(--h);letter-spacing:.08em}
 
 <footer>
   <img src="logo.png" alt="ALV Group Resources">
-  <span class="reg">ALV GROUP RESOURCES · 202403156415 (003612138-V)</span>
+  <span class="reg">ALV GROUP RESOURCES · SSM 202403156415 (003612138-V) · Berdaftar MOF &amp; CIDB</span>
   <span>© 2026 ALV Group Resources. Hak cipta terpelihara.</span>
 </footer>
 
@@ -517,21 +540,21 @@ document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>do
 
 // projects
 const P=[
- {k:'Parkir',t:'Cucian & Pembersihan Tapak Parkir',l:'IOI City Mall, Putrajaya',p:'p12'},
- {k:'Epoxy',t:'Membaikpulih & Mengecat Lantai Epoxy',l:'Premis Industri',p:'p10'},
- {k:'Marmar',t:'Penggilapan Lantai Marmar, Terazzo, Mozek & Jubin',l:'Kediaman & Komersial',p:'p14'},
- {k:'Rumah Contoh',t:'Pembersihan Rumah Contoh Selepas Siap Bina',l:'Novo Ampang',p:'p13'},
- {k:'Stamping',t:'Konkrit Bercorak (Stamping Imprint)',l:'Projek Kediaman',p:'p08'},
- {k:'Konkrit Slab',t:'Kerja-kerja Membuat Konkrit Slab',l:'Premis Komersial',p:'p09'},
- {k:'Cat Dinding',t:'Kerja-kerja Mengecat Dinding Bangunan',l:'Premis Industri',p:'p11'}
+ {k:'Konkrit Imprint',t:'Konkrit Bercorak (Stamping Imprint)',l:'Projek Kediaman',f:['st_1','st_2','st_3','st_4','st_5','st_6']},
+ {k:'Konkrit Slab',t:'Kerja-kerja Konkrit Slab & Turapan',l:'Kediaman & Komersial',f:['ks_1','ks_2','ks_3','ks_4','ks_5','ks_6']},
+ {k:'Marmar & Terazzo',t:'Penggilapan Lantai Marmar, Terazzo & Mozek',l:'Kediaman & Komersial',f:['pm_1','pm_2','pm_3','pm_4','pm_5','pm_6']},
+ {k:'Epoxy',t:'Salutan & Membaikpulih Lantai Epoxy',l:'Premis Industri',f:['ep_1','ep_2','ep_3','ep_4','ep_5','ep_6']},
+ {k:'Mengecat',t:'Kerja-kerja Mengecat Bangunan',l:'Kediaman · Komersial · Industri',f:['p11_02','p11_01','p11_03','p11_04','p11_05','p11_06']},
+ {k:'Naik Taraf Galeri',t:'Penyelenggaraan & Naik Taraf Galeri',l:'Agensi Kerajaan',f:['mada_1','paint_1','mada_2','mada_3','paint_2','mada_5']},
+ {k:'Pasca Pembinaan',t:'Pembersihan Rumah Contoh Selepas Siap Bina',l:'Novo Ampang',f:['p13_02','p13_01','p13_04','p13_03','p13_05','p13_06']},
+ {k:'Tapak Parkir',t:'Cucian & Pembersihan Tapak Parkir',l:'IOI City Mall, Putrajaya',f:['p12_02','p12_03','p12_04','p12_05','p12_06','p12_01']}
 ];
-const order={p08:[5,1,3,2,4,6],p09:[3,1,4,5,2,6],p10:[6,4,5,1,2,3],p11:[2,1,3,4,5,6],p12:[2,3,4,5,6,1],p13:[2,1,4,3,5,6],p14:[4,1,3,2,5,6]};
 const tabs=document.getElementById('tabs'),grid=document.getElementById('grid');
 let cur=[],curCap='';
 function show(n){
   const p=P[n];[...tabs.children].forEach((b,j)=>b.classList.toggle('on',j===n));
   document.getElementById('pTitle').textContent=p.t;document.getElementById('pLoc').textContent=p.l;
-  cur=order[p.p].map(i=>`${p.p}_0${i}.jpg`);curCap=p.t;
+  cur=p.f.map(n=>`${n}.jpg`);curCap=p.t;
   grid.innerHTML=cur.map((s,i)=>`<figure data-i="${i}"><img src="${s}" alt="${p.t}" loading="lazy"></figure>`).join('');
   [...grid.children].forEach((f,i)=>setTimeout(()=>f.classList.add('in'),60+i*80));
 }
@@ -548,7 +571,7 @@ lb.addEventListener('click',e=>{if(e.target===lb)lb.classList.remove('on')});
 addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')open(li-1);if(e.key==='ArrowRight')open(li+1)});
 
 // marquee
-const words=['Pembersihan Komersial','Epoxy','Penggilapan Marmar','Konkrit Stamping','Kerja Sivil','Pasca Renovasi'];
+const words=['Konkrit Imprint','Marmar & Terazzo','Lantai Epoxy','Kerja Mengecat','Pembersihan Pasca Pembinaan'];
 const one=words.map((w,i)=>`<span class="${i%2?'o':''}">${w}<i></i></span>`).join('');
 document.getElementById('mq').innerHTML=one+one;
 
